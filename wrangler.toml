@@ -1,6 +1,6 @@
 name = "tka-smancikbar"
 type = "javascript"
-account_id = "YOUR_ACCOUNT_ID"
+account_id = "3a325dcd1a79bac7795439a7d3c5c39b"  # ← Account ID kamu
 workers_dev = true
 route = ""
 zone_id = ""
@@ -17,10 +17,10 @@ format = "service-worker"
 [vars]
 ENVIRONMENT = "production"
 
-[kv_namespaces]
+[[kv_namespaces]]  # ← PERHATIKAN: harus pakai [[ ]] dua kurung!
 binding = "TKA_DB"
-id = "YOUR_KV_NAMESPACE_ID"
-preview_id = "YOUR_KV_PREVIEW_ID"
+id = "5fb7aa77c0a24798840a5ddf15a78439"         # ← Production KV Namespace ID
+preview_id = "29c3ed3b4b474d36a0d5a41e233b37fc" # ← Preview KV Namespace ID
 
 [site]
 bucket = "./public"
