@@ -1,0 +1,17 @@
+{
+  "name": "tka-smancikbar",
+  "version": "1.0.0",
+  "description": "Sistem TKA SMAN 2 Cikarang Barat dengan Cloudflare Worker",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "author": "SMAN 2 Cikarang Barat",
+  "license": "MIT"
+}

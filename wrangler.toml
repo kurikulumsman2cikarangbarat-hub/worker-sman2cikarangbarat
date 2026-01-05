@@ -1,0 +1,27 @@
+name = "tka-smancikbar"
+type = "javascript"
+account_id = "YOUR_ACCOUNT_ID"
+workers_dev = true
+route = ""
+zone_id = ""
+
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "npm install"
+
+[build.upload]
+format = "service-worker"
+
+[vars]
+ENVIRONMENT = "production"
+
+[kv_namespaces]
+binding = "TKA_DB"
+id = "YOUR_KV_NAMESPACE_ID"
+preview_id = "YOUR_KV_PREVIEW_ID"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
